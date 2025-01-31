@@ -1,0 +1,4 @@
+#Wed Oct 09 12:02:04 CEST 2024
+org.modelio.app.diagram.editor.OpenedDiagrams0='Diagramme de s\u00E9quence Interaction' {9b214c93-741a-4b39-a988-e8132e3f3b50} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='Diagramme de classe Magasin de rouleaux' {c1313c74-72d8-4851-8b33-83d34d56f5f3} Standard.ClassDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams2='Diagramme de cas d'utilisation magasin de rouleaux' {a10d3706-b627-4d25-9c31-96900e4e9fcf} Standard.UseCaseDiagram

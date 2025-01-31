@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-cb3c4c11cd840d4dcc08.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LaBanque",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LaBanque::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LaBanque-Debug-75729ae4b15f5f5b1f92.json",
+					"name" : "LaBanque",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/USERS/ELEVES/CIEL2023/yturpin/Ciel2_2024-2025/ProjetBanque/build-LaBanque-Desktop_Qt_6_7_1-Debug",
+		"source" : "/home/USERS/ELEVES/CIEL2023/yturpin/Ciel2_2024-2025/ProjetBanque/LaBanque"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

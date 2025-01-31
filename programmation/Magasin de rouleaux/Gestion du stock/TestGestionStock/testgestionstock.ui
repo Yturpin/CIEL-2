@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestGestionStock</class>
+ <widget class="QWidget" name="TestGestionStock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1104</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TestGestionStock</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>83</y>
+     <width>258</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Rouleaux en stock</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listWidgetStock"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonDemanderRetrait">
+      <property name="text">
+       <string>Demander retrait</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>80</y>
+     <width>258</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Rouleaux retenus</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listWidgetRouleauxRetenus"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonSupprimerDuSotck">
+      <property name="text">
+       <string>Supprimer du stock</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>231</y>
+     <width>200</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="labelReference">
+      <property name="text">
+       <string>Référence :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEditReference"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelDiametre">
+      <property name="text">
+       <string>Diamètre :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEditDiametre"/>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButtonQuitter">
+      <property name="text">
+       <string>Quitter</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButtonAjouterNouveau">
+      <property name="text">
+       <string>Ajouter nouveau</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Entrée d'un rouleau</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>460</y>
+     <width>82</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QPushButton" name="pushButtonCharger">
+      <property name="text">
+       <string>Charger</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonEnregistrer">
+      <property name="text">
+       <string>Enregistrer</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>pushButtonEnregistrer</zorder>
+  <zorder>pushButtonCharger</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>TestGestionStock</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

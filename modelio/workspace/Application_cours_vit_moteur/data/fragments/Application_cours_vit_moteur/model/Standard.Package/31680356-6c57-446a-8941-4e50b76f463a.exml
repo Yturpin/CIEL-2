@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="application_cours_vit_moteur" version="4">
+  <OBJECT>
+    <ID name="application_cours_vit_moteur" mc="Standard.Package" uid="31680356-6c57-446a-8941-4e50b76f463a"/>
+    <PID name="Application_cours_vit_moteur" mc="Standard.Project" uid="b2bc3f65-41bb-4c2b-98b7-24b7e99d0d90"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[application_cours_vit_moteur]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Ajuster la vitesse du moteur" mc="Standard.UseCase" uid="ab466ba2-2512-441a-8fc6-b6edd94a6c96"/>
+        <COMPID name="Etudiant" mc="Standard.Actor" uid="3094418b-121a-4fd1-80bb-26bd9f168f08"/>
+        <COMPID name="Equilibreuse" mc="Standard.Class" uid="8e94758e-570a-444b-b174-615f056fd5c4"/>
+        <COMPID name="Capot" mc="Standard.Class" uid="71d43dfa-8824-4151-b634-4294ed58656d"/>
+        <COMPID name="Moteur" mc="Standard.Class" uid="f4a67e50-919e-4525-8591-f8fb9fd41606"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe application_cours_vit_moteur" mc="Standard.ClassDiagram" uid="c9075171-8f8a-4ecc-8954-82c2befd1983"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

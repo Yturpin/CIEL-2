@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Centrale_Dalarme" version="4">
+  <OBJECT>
+    <ID name="Centrale_Dalarme" mc="Standard.Project" uid="12615b07-532f-48f2-82d0-dcea01f4e4f1"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Centrale_Dalarme]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="Centrale d'alarme" mc="Standard.Package" uid="940166ed-45eb-468d-8ea6-e67018b18750"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Centrale_Dalarme" mc="Infrastructure.DiagramSet" uid="40759d64-8ef3-4e35-aacf-dc248cb7be7a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

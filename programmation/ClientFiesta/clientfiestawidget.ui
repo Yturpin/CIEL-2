@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientFiestaWidget</class>
+ <widget class="QWidget" name="ClientFiestaWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ClientFiestaWidget</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>179</x>
+     <y>160</y>
+     <width>411</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButtonConnexion">
+      <property name="text">
+       <string>Connexion</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="lineEditPropMot"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButtonPropMot">
+      <property name="text">
+       <string>Proposition</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButtonQuitter">
+      <property name="text">
+       <string>Quitter</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButtonNewGame">
+      <property name="text">
+       <string>New Game</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>399</y>
+     <width>361</width>
+     <height>121</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPseudo">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>130</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>ClientFiestaWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>331</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

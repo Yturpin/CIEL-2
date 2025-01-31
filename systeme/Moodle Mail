@@ -1,0 +1,52 @@
+Concernant le serveur http apache
+L'accès aux  fichiers journaux se fait par la commande journalctl -xeu apache2
+
+---------------------------------------------------------------------------------------------------------------
+
+Pour le serveur de base de données mariadb-server,
+L'accès aux  fichiers journaux se fait par la commande journalctl -xeu mariadb
+
+---------------------------------------------------------------------------------------------------------------
+
+Concernant le serveur http apache
+Les fichiers de configuration se trouvent dans le répertoire /etc/apache2
+
+Pour ajouter un site, il faut créer un fichier de configuration spécifique dans le répertoire /etc/apache2/sites-available
+
+
+La directive permettant de définir le répertoire d'un site web se nomme DocumentRoot
+
+
+La directive permettant de définir le nom d'un site web se nomme ServerName
+
+---------------------------------------------------------------------------------------------------------------
+
+Concernant le serveur http apache, complétez les affirmations suivantes:
+
+Le service se nomme apache2
+
+
+Il est possible d'activer un site à l'aide de la commande a2ensite
+
+
+Il est possible d'activer un module à l'aide de la commande a2enmod
+
+
+Afin de connaître l'état du serveur, on peux taper :
+
+systemctl status apache2
+
+---------------------------------------------------------------------------------------------------------------
+<VirtualHost * 80> = numero de port du service
+
+ServerName = Nom du serveur
+
+ServAdmin = Adresse mail du responsable du serveur http
+
+DocumentRoot = Répertoire des pages du serveur 
+
+ErrorLog = chemin et fichier journal des erreurs     
+
+CustomLog = Chemin et fichier journal des accès
+
+

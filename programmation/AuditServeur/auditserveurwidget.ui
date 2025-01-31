@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuditServeurWidget</class>
+ <widget class="QWidget" name="AuditServeurWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AuditServeurWidget</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>95</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Numéro de port</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>160</y>
+     <width>76</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Informations</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonLancementServeur">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>120</y>
+     <width>441</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lancement serveur</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonQuitter">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>440</y>
+     <width>441</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditInformations">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>180</y>
+     <width>441</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxPort">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>80</y>
+     <width>281</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1025</number>
+   </property>
+   <property name="maximum">
+    <number>65535</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>AuditServeurWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>403</x>
+     <y>541</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="FiestaDeLosMuertos" version="4">
+  <OBJECT>
+    <ID name="FiestaDeLosMuertos" mc="Standard.Project" uid="b40035bf-5cdd-4202-91b7-ca9559a9d697"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[FiestaDeLosMuertos]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="fiestadelosmuertos" mc="Standard.Package" uid="1468ed24-e3fa-441d-8d05-d854226b3c72"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="FiestaDeLosMuertos" mc="Infrastructure.DiagramSet" uid="1457d67e-ffdb-4506-bb86-1da391a1c1e7"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

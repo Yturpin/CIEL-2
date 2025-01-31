@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="dab_2024" version="4">
+  <OBJECT>
+    <ID name="dab_2024" mc="Standard.Package" uid="2a877ed1-f61a-4b0a-9f13-835f6fd09c2a"/>
+    <PID name="Dab_2024" mc="Standard.Project" uid="f81c3414-1865-4c4a-a3d8-6cdfc697411a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[dab_2024]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Banquier" mc="Standard.Actor" uid="03214156-ffcb-4cab-adba-a3770a310dbf"/>
+        <COMPID name="Client" mc="Standard.Actor" uid="15c54473-858b-4137-902e-fd63c9d2b3f5"/>
+        <COMPID name="Approvisionner le distributeur" mc="Standard.UseCase" uid="421483d0-eb8b-4491-87cc-614917e4bc6b"/>
+        <COMPID name="Retirer des espèces" mc="Standard.UseCase" uid="96af8374-2c18-4f1d-bf7a-009cb133ad8a"/>
+        <COMPID name="Consulter le solde" mc="Standard.UseCase" uid="27ffaed1-e691-4aca-906b-19057c61878c"/>
+        <COMPID name="S'identifier" mc="Standard.UseCase" uid="0c56e026-6b30-4e11-bdaf-8c269297d350"/>
+        <COMPID name="Obtenir un reçu" mc="Standard.UseCase" uid="18f77f53-fcee-45f3-ab36-ae4356b17fb8"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation dab_2024" mc="Standard.UseCaseDiagram" uid="e391d8ab-c523-418b-8edd-7a92a3cb1201"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TypePositionStock" version="4">
+  <OBJECT>
+    <ID name="TypePositionStock" mc="Standard.DataType" uid="506acbbc-5beb-4a05-8581-5ff0f1400aab"/>
+    <PID name="Stock" mc="Standard.Class" uid="b07a4379-14d7-4bf0-bf84-ca424f38c650"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TypePositionStock]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

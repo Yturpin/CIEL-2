@@ -1,0 +1,180 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="State Machine" version="4">
+  <OBJECT>
+    <ID name="State Machine" mc="Standard.StateMachine" uid="a9981549-a6d6-456f-811c-9a9391410af7"/>
+    <PID name="Magasin de rouleaux" mc="Standard.Package" uid="b48d83ca-2fa2-4801-bb8c-b7902579a9af"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[State Machine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="0890a386-c3fc-4bef-8e88-94e1c306078d"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="8e052c4a-4f08-4899-8d8a-cfd8c7848438"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="3f7bb1f1-ad7a-4956-a232-1ce4d5793edf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="REPOS" mc="Standard.State" uid="18deb875-7a0f-4c17-ab04-d1d0c3b0ee38"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="REPOS" mc="Standard.State" uid="18deb875-7a0f-4c17-ab04-d1d0c3b0ee38"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[REPOS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="3d495b2a-0e1e-4e21-849d-c2166661317d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[EntrerRouleau]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="EntrerUnRouleau" mc="Standard.Operation" uid="3ea4d99d-aac7-4573-8f4f-6b503fd09c4b"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="RECEPTION_ROULEAU" mc="Standard.State" uid="9403d73f-ccaf-4fe1-b9b5-9db8a9a05ad9"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="458030cc-1993-43ba-b84b-4e93647c4423"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[sortirSerieDeRouleau]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="SortieUneSerieDeRouleaux" mc="Standard.Operation" uid="fa6ac384-cc12-45d6-b1e6-4d719bfa4eb0"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="SORTIE_SERIE_ROULEAUX" mc="Standard.State" uid="b44ab3e5-2a39-467a-8ef0-04392f68b02e"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="RECEPTION_ROULEAU" mc="Standard.State" uid="9403d73f-ccaf-4fe1-b9b5-9db8a9a05ad9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[RECEPTION_ROULEAU]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="c3fd5ba3-c457-4ff6-b18b-a0201cf1783f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="REPOS" mc="Standard.State" uid="18deb875-7a0f-4c17-ab04-d1d0c3b0ee38"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="SORTIE_SERIE_ROULEAUX" mc="Standard.State" uid="b44ab3e5-2a39-467a-8ef0-04392f68b02e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[SORTIE_SERIE_ROULEAUX]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="e6e23c94-0cd9-452e-9aaf-7d26bb46278e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="REPOS" mc="Standard.State" uid="18deb875-7a0f-4c17-ab04-d1d0c3b0ee38"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme d'état State Machine" mc="Standard.StateMachineDiagram" uid="721263a1-fc23-40f3-b1fd-d8d821a61901"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

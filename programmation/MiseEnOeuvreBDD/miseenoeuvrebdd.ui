@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MiseEnOeuvreBDD</class>
+ <widget class="QWidget" name="MiseEnOeuvreBDD">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MiseEnOeuvreBDD</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>230</y>
+     <width>200</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Donnez un code de département :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>260</y>
+     <width>134</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nom du département :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonObtenirNomDep">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>220</y>
+     <width>191</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Obtenir le nom du département</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNomDepartement">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>260</y>
+     <width>311</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCodeDepartement">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>220</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxRegions">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>320</y>
+     <width>161</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxDepartements">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>320</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>320</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

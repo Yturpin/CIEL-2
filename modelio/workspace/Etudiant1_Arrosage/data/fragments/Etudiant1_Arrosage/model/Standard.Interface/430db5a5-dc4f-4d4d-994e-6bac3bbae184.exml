@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="InterfaceBoitier" version="4">
+  <OBJECT>
+    <ID name="InterfaceBoitier" mc="Standard.Interface" uid="430db5a5-dc4f-4d4d-994e-6bac3bbae184"/>
+    <PID name="etudiant1_arrosage" mc="Standard.Package" uid="947fa0a3-ee18-44c1-bd4a-cd29919edbf3"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[InterfaceBoitier]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

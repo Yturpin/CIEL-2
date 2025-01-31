@@ -1,0 +1,7 @@
+4.3 
+
+    4. Description surveiller les locaux : Si la porte est ouverte, on considère alors qu'il s'agit du propriétaire et un timer de 20 secondes est lancé le temps de désarmer l'alarme. Si la centrale d'alarme n'est pas désarmée au bout de 20 secondes on considère qu'un intrus est détecté et la sirène est directement déclenchée.
+ 
+Si un tout autre mouvement en dehors de l'ouverture de la porte est détecté on considère directement la présence d'un intrus et la sirène est directement déclenchée.
+
+

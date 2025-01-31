@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Magasin de rouleaux" version="4">
+  <OBJECT>
+    <ID name="Magasin de rouleaux" mc="Standard.Package" uid="b48d83ca-2fa2-4801-bb8c-b7902579a9af"/>
+    <PID name="Magasin de rouleaux" mc="Standard.Project" uid="98433345-577e-46e6-a6ab-274772a759a3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Magasin de rouleaux]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="a9981549-a6d6-456f-811c-9a9391410af7"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Opérateur" mc="Standard.Actor" uid="6cbc034a-98db-4faf-8e2f-6de3edcd3ee3"/>
+        <COMPID name="Entrer un rouleau dans le magasin" mc="Standard.UseCase" uid="700e8019-61b1-4111-b8fc-93cde8cbd2c1"/>
+        <COMPID name="Sortir une série de rouleaux" mc="Standard.UseCase" uid="d727eec9-89ec-4440-9f1f-7a76827b62d4"/>
+        <COMPID name="Magasin" mc="Standard.Class" uid="dd63ab78-87c7-42ce-8026-1cf378231085"/>
+        <COMPID name="AlveolesLibres" mc="Standard.Class" uid="94b6166c-4b52-4dad-9f8c-995864ba765f"/>
+        <COMPID name="Stock" mc="Standard.Class" uid="b07a4379-14d7-4bf0-bf84-ca424f38c650"/>
+        <COMPID name="Chariot" mc="Standard.Class" uid="18274c84-dd1c-4008-9beb-28fc7ab5497a"/>
+        <COMPID name="Rouleau" mc="Standard.Class" uid="029446f0-952c-4bbc-bf95-e8743f37ffba"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation magasin de rouleaux" mc="Standard.UseCaseDiagram" uid="a10d3706-b627-4d25-9c31-96900e4e9fcf"/>
+        <COMPID name="Diagramme de classe Magasin de rouleaux" mc="Standard.ClassDiagram" uid="c1313c74-72d8-4851-8b33-83d34d56f5f3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

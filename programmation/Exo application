@@ -1,0 +1,25 @@
+Pré condition :Le client dispose d’une carte bancaire
+Post-condition en cas de succès : Le client récupère sa carte bancaire et reçoit un recu 
+Post-condition en cas d’échec : La carte bancaire du client est retenue par le distributeur
+
+Détail du scénario principal :
+1. le client introduit sa carte bancaire
+2. le distributeur vérifie la carte bancaire
+3. le client saisit son code secret
+4. le distributeur vérifie le code
+5. le client choisit l’opération « Consulter »
+6.le distributeur interroge le solde du compte
+7. le distributeur affiche le solde du compte
+8. le distributeur rend la carte
+9. le distributeur donne un reçu
+10. le client retire sa carte du distributeur 
+
+Alternative en cas de code incorrecte :
+Suite à l’étape n°4 du scénario principal, le code est incorrect :
+1. le distributeur demande à nouveau le code secret
+2. le client saisit à nouveau son code
+3. le distributeur vérifie à nouveau le code
+Si le code est correct, le scénario se poursuit à l’étape 5 du scénario principal. Si le code est toujours
+incorrect, le scénario reprend à l’étape 1 de l’alternative. Au bout de la troisième tentative en échec, le
+scénario se termine par l’étape 4 suivante :
+4. le distributeur retient la carte bancaire et avertit le client

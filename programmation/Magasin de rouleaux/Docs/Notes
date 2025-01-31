@@ -1,0 +1,17 @@
+Paramètres d'entrée :
+
+void maFonction(const int a){
+    
+    cout << a;
+}
+
+---------------------------------
+
+Paramètres de sortie :
+
+void maFonction(int &a){
+    
+    a <- d;
+}
+
+

@@ -1,0 +1,17 @@
+1) 0.2 : N
+    0.8 : B
+
+2) a) 
+
+b) obtenir exactement deux boules noires : D'apès Geogebra P(E) = 0.0008 %
+
+-On a deux issues uniquement, boules noires ou boules blanches 
+p = 0,2 = 2 / 2 + 8
+-On règle cette loi de Bernouilli de manière identique et indépendante n fois  car on admet qu'un tirage avec remise est indépendant et identique. 
+-X = nb boules noires donc X répond à la question combien de fois je tire trois boules noires pendant les n répétitions.
+
+Les trois conditions etant remplis X est une loi binomiale de paramètres (3; 0.2) ou X e B(3;0.2) 
+
+c) obtenir exactement deux boules noires : P(F) = 0.096 %
+
+P(F) = 0.096 car 

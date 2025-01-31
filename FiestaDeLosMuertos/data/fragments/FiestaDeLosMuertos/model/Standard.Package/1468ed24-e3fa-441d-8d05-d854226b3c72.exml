@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="fiestadelosmuertos" version="4">
+  <OBJECT>
+    <ID name="fiestadelosmuertos" mc="Standard.Package" uid="1468ed24-e3fa-441d-8d05-d854226b3c72"/>
+    <PID name="FiestaDeLosMuertos" mc="Standard.Project" uid="b40035bf-5cdd-4202-91b7-ca9559a9d697"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[fiestadelosmuertos]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="9138a085-de47-4cb3-8bee-ee7e4c5a70e2"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Serveur" mc="Standard.Actor" uid="5a2d758d-99c0-41e6-ad81-667b7cb71094"/>
+        <COMPID name="Affecter un personnage" mc="Standard.UseCase" uid="f0607fef-3ee0-4c6c-aa5d-7ed0d2ace08c"/>
+        <COMPID name="Joueur" mc="Standard.Actor" uid="e44300ee-5849-46da-abf2-4cfc695ac427"/>
+        <COMPID name="Recevoir une proposition" mc="Standard.UseCase" uid="ac0588a7-d73c-4630-a592-6eb6a8c61381"/>
+        <COMPID name="Recevoir les déductions et envoyer les résultats" mc="Standard.UseCase" uid="a7eeaae9-cd64-414c-986d-cc3ab23a14d6"/>
+        <COMPID name="Se connecter au serveur" mc="Standard.UseCase" uid="8f7bbe5c-09e0-4ce8-8b34-7353d259f700"/>
+        <COMPID name="Recevoir le nom d'un personnage" mc="Standard.UseCase" uid="c1de144c-06c5-45b7-ba75-a5ef9404730e"/>
+        <COMPID name="Proposer un nouveau mot en relation avec le personnage ou un mot reçu" mc="Standard.UseCase" uid="407cc2b2-354f-4d9f-af8d-6e1933eada7e"/>
+        <COMPID name="Recevoir une nouvelle proposition de mot" mc="Standard.UseCase" uid="ca3d97b2-92cb-4c6a-8300-c032de52be9c"/>
+        <COMPID name="Faire des déductions et les envoyer" mc="Standard.UseCase" uid="e9e2c5fe-de25-4d6b-9a3c-27bfefd1b762"/>
+        <COMPID name="Consulter les résultats" mc="Standard.UseCase" uid="dafc6dec-4aa5-40c8-964b-00d967ac9787"/>
+        <COMPID name="Accepter une connexion" mc="Standard.UseCase" uid="3c07925e-3a25-46da-a797-2d178fca16ac"/>
+        <COMPID name="Redistribuer les mots reçus" mc="Standard.UseCase" uid="d48dc121-7776-4447-81bd-aa13b65342a5"/>
+        <COMPID name="Enregistrer les résultats" mc="Standard.UseCase" uid="953dc8e9-fba2-4f52-bb17-7e82fa11482a"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation fiestadelosmuertos" mc="Standard.UseCaseDiagram" uid="4d9db263-9aa0-4946-b466-e5329a8f9594"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

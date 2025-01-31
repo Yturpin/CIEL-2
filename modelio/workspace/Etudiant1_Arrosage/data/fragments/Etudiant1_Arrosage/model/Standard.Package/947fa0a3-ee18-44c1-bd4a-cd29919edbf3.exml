@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="etudiant1_arrosage" version="4">
+  <OBJECT>
+    <ID name="etudiant1_arrosage" mc="Standard.Package" uid="947fa0a3-ee18-44c1-bd4a-cd29919edbf3"/>
+    <PID name="Etudiant1_Arrosage" mc="Standard.Project" uid="217e3205-7575-415d-b404-80965d74bac7"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[etudiant1_arrosage]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Actor" mc="Standard.Actor" uid="fd4bfee3-4133-43be-b2f2-1cb9c744f5e8"/>
+        <COMPID name="InterfaceBoitier" mc="Standard.Interface" uid="430db5a5-dc4f-4d4d-994e-6bac3bbae184"/>
+        <COMPID name="Electrovanne" mc="Standard.Class" uid="59cd9b1c-ae89-4ab3-a077-9a2d145ee51e"/>
+        <COMPID name="Menu" mc="Standard.Class" uid="0f17568b-da05-44f1-a759-31eb55c68b89"/>
+        <COMPID name="ControleurVannes" mc="Standard.Class" uid="a073223a-0f63-4145-82fd-779a1afe6981"/>
+        <COMPID name="Choisir le fonctionnement d’une électrovanne" mc="Standard.UseCase" uid="afcb12b9-7e5b-41d8-afa5-201c0ed92f80"/>
+        <COMPID name="Mettre à jour les cycles d'arrosage" mc="Standard.UseCase" uid="8d09fbc8-067e-4a0d-890d-f0520c2d53d9"/>
+        <COMPID name="Régler le seuil d'humidité" mc="Standard.UseCase" uid="9934bcf0-47a4-43b2-bec9-ddd9b7ff4af1"/>
+        <COMPID name="Lillygo-HiGrow" mc="Standard.Class" uid="e7310abd-9c59-4ed1-8f68-e4f3137e7f88"/>
+        <COMPID name="Controler les vannes" mc="Standard.UseCase" uid="84e543de-69e4-437a-9992-c2c3c9b2462a"/>
+        <COMPID name="MemoireLocale" mc="Standard.Class" uid="627d8ee9-872c-45d2-82b8-e32f2f742183"/>
+        <COMPID name="Piloter l'arrosage localement" mc="Standard.UseCase" uid="ccf9bf52-89dc-498f-80d9-637fce009fd8"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe etudiant1_arrosage" mc="Standard.ClassDiagram" uid="112b3e4a-0644-486b-815a-6961527b0a5c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

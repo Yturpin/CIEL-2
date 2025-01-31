@@ -1,0 +1,65 @@
+//Nommer et affecter les ports au vlan 2
+
+vlan 2
+name vlan_Deux
+exit 
+exit
+show vlan brief 
+conf t
+interface range fa0/3-6
+switchport access vlan 2
+
+//config trunk
+
+en
+conf t
+interface fa0/1
+switchport mode trunk
+switchport trunk allowed vlan 1,2,3,4
+switchport trunk native vlan 99
+
+show interfaces trunk
+
+//router
+
+en
+conf t 
+interface fastEthernet 0/0
+no shutdown
+Router(config)#interface fa0/0.3
+Router(config-subif)#encapsulation dot1Q 3
+Router(config-subif)#ip address 192.168.1.1 255.255.255.0
+Router(config-subif)#exit
+
+
+//Config Vlan
+
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#vlan 10
+Switch(config-vlan)#name vlan_disc
+Switch(config-vlan)#interface range fa0/1-11
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#switchport access vlan 10
+Switch(config-vlan)#end
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Switch#show vlan brief
+
+
+//Config Trunk
+
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#interface giga 0/1
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport trunk allowed vlan 10,20,1
+
+
+
+

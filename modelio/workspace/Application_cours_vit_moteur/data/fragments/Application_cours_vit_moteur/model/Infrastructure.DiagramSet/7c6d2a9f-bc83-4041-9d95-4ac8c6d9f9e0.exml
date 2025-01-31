@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Application_cours_vit_moteur" version="4">
+  <OBJECT>
+    <ID name="Application_cours_vit_moteur" mc="Infrastructure.DiagramSet" uid="7c6d2a9f-bc83-4041-9d95-4ac8c6d9f9e0"/>
+    <PID name="Application_cours_vit_moteur" mc="Standard.Project" uid="b2bc3f65-41bb-4c2b-98b7-24b7e99d0d90"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Application_cours_vit_moteur]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

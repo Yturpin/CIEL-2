@@ -1,0 +1,6 @@
+#Wed Jan 29 11:58:11 CET 2025
+org.modelio.app.diagram.editor.OpenedDiagrams0='DS Piloter l'arrosage localement' {0ddfeb15-cee9-445e-8c8a-07858788edc3} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams3='DS Controler les vannes' {d9692ef3-2801-47c1-bf79-89347a2f58ce} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams4='DS Mettre \u00E0 jour les cycles d'arrosage' {a71b6b94-579a-46a3-bd1b-9246b87c13e5} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='DS Choisir le fonctionnement d\u2019une \u00E9lectrovanne' {9d7e1921-b466-45dc-9068-88f37057dc8a} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams2='DS R\u00E9gler le seuil d'humidit\u00E9' {3389cf85-d40b-4ea7-8534-ab3c5714707f} Standard.SequenceDiagram

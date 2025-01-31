@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Magasin de rouleaux" version="4">
+  <OBJECT>
+    <ID name="Magasin de rouleaux" mc="Standard.Project" uid="98433345-577e-46e6-a6ab-274772a759a3"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Magasin de rouleaux]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="magasin de rouleaux" mc="Standard.Package" uid="b48d83ca-2fa2-4801-bb8c-b7902579a9af"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Magasin de rouleaux" mc="Infrastructure.DiagramSet" uid="f7daed26-dc03-4436-8fee-a847bf2697c7"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Etudiant" version="4">
+  <OBJECT>
+    <ID name="Etudiant" mc="Standard.Actor" uid="3094418b-121a-4fd1-80bb-26bd9f168f08"/>
+    <PID name="application_cours_vit_moteur" mc="Standard.Package" uid="31680356-6c57-446a-8941-4e50b76f463a"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Etudiant]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

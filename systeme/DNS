@@ -1,0 +1,41 @@
+Côté serveur :
+
+Le nom du package gérant le serveur de noms est [bind9].
+
+Les fichier de configuration se trouve dans le répertoire /etc/[bind]
+
+Le fichier permettant de préciser où se trouvent les résolutions directes et inverse pour le réseau local se nomme [named.conf.local].
+
+Pour pouvoir faire les résolutions externe au réseau local, il faut configurer les [forwarders] dans le fichier [named.conf.options]
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Le nom de domaine est touchard.edu, le nom de machine est hercule.
+
+Le domaine couvre le réseau 192.168.0.0/24.
+
+Le fichier de résolution direct est nommé db.touchard.edu et un fichier de résolution inverse est nommé db.touchard.edu.inv.
+
+Pour voir l'état du serveur de nom on fait : [systemctl] [status] [bind9]
+
+S'il y a des erreurs, on visualise en faisant : [journalctl ‑xeu] [bind9]
+
+Pour tester le fichier de zone directe : [named‑checkzone] [touchard.edu] [/etc/bind/db.touchard.edu]
+
+Pour tester le fichier de zone inverse : [named‑checkzone] [0.168.192.in‑addr.arpa ] [/etc/bind/db.touchard.edu.inv]
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Sous Linux Debian, coté client:
+
+Le fichier permettant de faire une résolution de nom sans passer par un serveur est /etc/[hosts].
+
+Le nom local de la machine est dans le fichier /etc/[hostname]
+
+Quel fichier est mis à jour par le DHCP et contient les informations relatives au serveur DNS ?  /etc/[resolv.conf]
+
+L'outil permettant de tester si le DNS fonctionne correctement en résolution direct et inverse se nomme [nslookup].
+
+ ---------------------------------------------------------------------------------------------------------------------------
+
+Les réponses correctes sont : Adresse IP selon un nom, Un nom selon une adresse IP
