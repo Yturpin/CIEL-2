@@ -2,11 +2,318 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="examples">
+        <df name="test_lib_1306_rot">
+        </df>
+        <df name="test_lib_1306_rot_v2f">
+        </df>
+        <df name="test_lib_1306_rot_v5f">
+        </df>
+      </df>
       <df name="include">
+        <df name="clib">
+          <in>chessengine.c</in>
+          <in>u8g.h</in>
+          <in>u8g_bitmap.c</in>
+          <in>u8g_circle.c</in>
+          <in>u8g_clip.c</in>
+          <in>u8g_com_api.c</in>
+          <in>u8g_com_api_16gr.c</in>
+          <in>u8g_com_arduino_attiny85_hw_spi.c</in>
+          <in>u8g_com_arduino_common.c</in>
+          <in>u8g_com_arduino_fast_parallel.c</in>
+          <in>u8g_com_arduino_hw_spi.c</in>
+          <in>u8g_com_arduino_hw_usart_spi.c</in>
+          <in>u8g_com_arduino_no_en_parallel.c</in>
+          <in>u8g_com_arduino_parallel.c</in>
+          <in>u8g_com_arduino_port_d_wr.c</in>
+          <in>u8g_com_arduino_ssd_i2c.c</in>
+          <in>u8g_com_arduino_st7920_custom.c</in>
+          <in>u8g_com_arduino_st7920_hw_spi.c</in>
+          <in>u8g_com_arduino_st7920_spi.c</in>
+          <in>u8g_com_arduino_std_sw_spi.c</in>
+          <in>u8g_com_arduino_sw_spi.c</in>
+          <in>u8g_com_arduino_t6963.c</in>
+          <in>u8g_com_arduino_uc_i2c.c</in>
+          <in>u8g_com_atmega_hw_spi.c</in>
+          <in>u8g_com_atmega_parallel.c</in>
+          <in>u8g_com_atmega_st7920_hw_spi.c</in>
+          <in>u8g_com_atmega_st7920_spi.c</in>
+          <in>u8g_com_atmega_sw_spi.c</in>
+          <in>u8g_com_atxmega_hw_spi.c</in>
+          <in>u8g_com_atxmega_st7920_hw_spi.c</in>
+          <in>u8g_com_i2c.c</in>
+          <in>u8g_com_io.c</in>
+          <in>u8g_com_linux_ssd_i2c.c</in>
+          <in>u8g_com_msp430_hw_spi.c</in>
+          <in>u8g_com_null.c</in>
+          <in>u8g_com_psoc5_ssd_hw_parallel.c</in>
+          <in>u8g_com_raspberrypi_hw_spi.c</in>
+          <in>u8g_com_raspberrypi_ssd_i2c.c</in>
+          <in>u8g_com_std_sw_spi.c</in>
+          <in>u8g_cursor.c</in>
+          <in>u8g_delay.c</in>
+          <in>u8g_dev_a2_micro_printer.c</in>
+          <in>u8g_dev_flipdisc_2x7.c</in>
+          <in>u8g_dev_gprof.c</in>
+          <in>u8g_dev_ht1632.c</in>
+          <in>u8g_dev_ili9325d_320x240.c</in>
+          <in>u8g_dev_ks0108_128x64.c</in>
+          <in>u8g_dev_lc7981_160x80.c</in>
+          <in>u8g_dev_lc7981_240x128.c</in>
+          <in>u8g_dev_lc7981_240x64.c</in>
+          <in>u8g_dev_lc7981_320x64.c</in>
+          <in>u8g_dev_ld7032_60x32.c</in>
+          <in>u8g_dev_null.c</in>
+          <in>u8g_dev_pcd8544_84x48.c</in>
+          <in>u8g_dev_pcf8812_96x65.c</in>
+          <in>u8g_dev_sbn1661_122x32.c</in>
+          <in>u8g_dev_ssd1306_128x32.c</in>
+          <in>u8g_dev_ssd1306_128x64.c</in>
+          <in>u8g_dev_ssd1306_64x48.c</in>
+          <in>u8g_dev_ssd1309_128x64.c</in>
+          <in>u8g_dev_ssd1322_nhd31oled_bw.c</in>
+          <in>u8g_dev_ssd1322_nhd31oled_gr.c</in>
+          <in>u8g_dev_ssd1325_nhd27oled_bw.c</in>
+          <in>u8g_dev_ssd1325_nhd27oled_bw_new.c</in>
+          <in>u8g_dev_ssd1325_nhd27oled_gr.c</in>
+          <in>u8g_dev_ssd1325_nhd27oled_gr_new.c</in>
+          <in>u8g_dev_ssd1327_96x96_gr.c</in>
+          <in>u8g_dev_ssd1351_128x128.c</in>
+          <in>u8g_dev_ssd1353_160x128.c</in>
+          <in>u8g_dev_st7565_64128n.c</in>
+          <in>u8g_dev_st7565_dogm128.c</in>
+          <in>u8g_dev_st7565_dogm132.c</in>
+          <in>u8g_dev_st7565_lm6059.c</in>
+          <in>u8g_dev_st7565_lm6063.c</in>
+          <in>u8g_dev_st7565_nhd_c12832.c</in>
+          <in>u8g_dev_st7565_nhd_c12864.c</in>
+          <in>u8g_dev_st7687_c144mvgd.c</in>
+          <in>u8g_dev_st7920_128x64.c</in>
+          <in>u8g_dev_st7920_192x32.c</in>
+          <in>u8g_dev_st7920_202x32.c</in>
+          <in>u8g_dev_t6963_128x128.c</in>
+          <in>u8g_dev_t6963_128x64.c</in>
+          <in>u8g_dev_t6963_240x128.c</in>
+          <in>u8g_dev_t6963_240x64.c</in>
+          <in>u8g_dev_tls8204_84x48.c</in>
+          <in>u8g_dev_uc1601_c128032.c</in>
+          <in>u8g_dev_uc1608_240x128.c</in>
+          <in>u8g_dev_uc1608_240x64.c</in>
+          <in>u8g_dev_uc1610_dogxl160.c</in>
+          <in>u8g_dev_uc1611_dogm240.c</in>
+          <in>u8g_dev_uc1611_dogxl240.c</in>
+          <in>u8g_dev_uc1701_dogs102.c</in>
+          <in>u8g_dev_uc1701_mini12864.c</in>
+          <in>u8g_ellipse.c</in>
+          <in>u8g_font.c</in>
+          <in>u8g_font_data.c</in>
+          <in>u8g_line.c</in>
+          <in>u8g_ll_api.c</in>
+          <in>u8g_page.c</in>
+          <in>u8g_pb.c</in>
+          <in>u8g_pb14v1.c</in>
+          <in>u8g_pb16h1.c</in>
+          <in>u8g_pb16h2.c</in>
+          <in>u8g_pb16v1.c</in>
+          <in>u8g_pb16v2.c</in>
+          <in>u8g_pb32h1.c</in>
+          <in>u8g_pb8h1.c</in>
+          <in>u8g_pb8h1f.c</in>
+          <in>u8g_pb8h2.c</in>
+          <in>u8g_pb8h8.c</in>
+          <in>u8g_pb8v1.c</in>
+          <in>u8g_pb8v2.c</in>
+          <in>u8g_pbxh16.c</in>
+          <in>u8g_pbxh24.c</in>
+          <in>u8g_polygon.c</in>
+          <in>u8g_rect.c</in>
+          <in>u8g_rot.c</in>
+          <in>u8g_scale.c</in>
+          <in>u8g_state.c</in>
+          <in>u8g_u16toa.c</in>
+          <in>u8g_u8toa.c</in>
+          <in>u8g_virtual_screen.c</in>
+        </df>
+        <in>U8glib.cpp</in>
+        <in>U8glib.h</in>
+        <in>esp_snir.h</in>
+        <in>lib_1306_rot.cpp</in>
+        <in>lib_1306_rot.h</in>
       </df>
       <df name="lib">
       </df>
       <df name="src">
+        <df name="U8glib-1.19.1">
+          <df name="examples">
+            <df name="A2Printer">
+            </df>
+            <df name="Bitmap">
+            </df>
+            <df name="Chess">
+            </df>
+            <df name="Console">
+            </df>
+            <df name="F">
+            </df>
+            <df name="FPS">
+            </df>
+            <df name="GraphicsTest">
+            </df>
+            <df name="HelloWorld">
+            </df>
+            <df name="Menu">
+            </df>
+            <df name="PrintTest">
+            </df>
+            <df name="Rotation">
+            </df>
+            <df name="Scale">
+            </df>
+            <df name="TextRotX">
+            </df>
+            <df name="Touch4WSetup">
+            </df>
+            <df name="Touch4WTest">
+            </df>
+            <df name="U8gLogo">
+            </df>
+            <df name="XBM">
+            </df>
+          </df>
+          <df name="extras">
+          </df>
+          <df name="src">
+            <df name="clib">
+              <in>chessengine.c</in>
+              <in>u8g.h</in>
+              <in>u8g_bitmap.c</in>
+              <in>u8g_circle.c</in>
+              <in>u8g_clip.c</in>
+              <in>u8g_com_api.c</in>
+              <in>u8g_com_api_16gr.c</in>
+              <in>u8g_com_arduino_attiny85_hw_spi.c</in>
+              <in>u8g_com_arduino_common.c</in>
+              <in>u8g_com_arduino_fast_parallel.c</in>
+              <in>u8g_com_arduino_hw_spi.c</in>
+              <in>u8g_com_arduino_hw_usart_spi.c</in>
+              <in>u8g_com_arduino_no_en_parallel.c</in>
+              <in>u8g_com_arduino_parallel.c</in>
+              <in>u8g_com_arduino_port_d_wr.c</in>
+              <in>u8g_com_arduino_ssd_i2c.c</in>
+              <in>u8g_com_arduino_st7920_custom.c</in>
+              <in>u8g_com_arduino_st7920_hw_spi.c</in>
+              <in>u8g_com_arduino_st7920_spi.c</in>
+              <in>u8g_com_arduino_std_sw_spi.c</in>
+              <in>u8g_com_arduino_sw_spi.c</in>
+              <in>u8g_com_arduino_t6963.c</in>
+              <in>u8g_com_arduino_uc_i2c.c</in>
+              <in>u8g_com_atmega_hw_spi.c</in>
+              <in>u8g_com_atmega_parallel.c</in>
+              <in>u8g_com_atmega_st7920_hw_spi.c</in>
+              <in>u8g_com_atmega_st7920_spi.c</in>
+              <in>u8g_com_atmega_sw_spi.c</in>
+              <in>u8g_com_atxmega_hw_spi.c</in>
+              <in>u8g_com_atxmega_st7920_hw_spi.c</in>
+              <in>u8g_com_i2c.c</in>
+              <in>u8g_com_io.c</in>
+              <in>u8g_com_linux_ssd_i2c.c</in>
+              <in>u8g_com_msp430_hw_spi.c</in>
+              <in>u8g_com_null.c</in>
+              <in>u8g_com_psoc5_ssd_hw_parallel.c</in>
+              <in>u8g_com_raspberrypi_hw_spi.c</in>
+              <in>u8g_com_raspberrypi_ssd_i2c.c</in>
+              <in>u8g_com_std_sw_spi.c</in>
+              <in>u8g_cursor.c</in>
+              <in>u8g_delay.c</in>
+              <in>u8g_dev_a2_micro_printer.c</in>
+              <in>u8g_dev_flipdisc_2x7.c</in>
+              <in>u8g_dev_gprof.c</in>
+              <in>u8g_dev_ht1632.c</in>
+              <in>u8g_dev_ili9325d_320x240.c</in>
+              <in>u8g_dev_ks0108_128x64.c</in>
+              <in>u8g_dev_lc7981_160x80.c</in>
+              <in>u8g_dev_lc7981_240x128.c</in>
+              <in>u8g_dev_lc7981_240x64.c</in>
+              <in>u8g_dev_lc7981_320x64.c</in>
+              <in>u8g_dev_ld7032_60x32.c</in>
+              <in>u8g_dev_null.c</in>
+              <in>u8g_dev_pcd8544_84x48.c</in>
+              <in>u8g_dev_pcf8812_96x65.c</in>
+              <in>u8g_dev_sbn1661_122x32.c</in>
+              <in>u8g_dev_ssd1306_128x32.c</in>
+              <in>u8g_dev_ssd1306_128x64.c</in>
+              <in>u8g_dev_ssd1306_64x48.c</in>
+              <in>u8g_dev_ssd1309_128x64.c</in>
+              <in>u8g_dev_ssd1322_nhd31oled_bw.c</in>
+              <in>u8g_dev_ssd1322_nhd31oled_gr.c</in>
+              <in>u8g_dev_ssd1325_nhd27oled_bw.c</in>
+              <in>u8g_dev_ssd1325_nhd27oled_bw_new.c</in>
+              <in>u8g_dev_ssd1325_nhd27oled_gr.c</in>
+              <in>u8g_dev_ssd1325_nhd27oled_gr_new.c</in>
+              <in>u8g_dev_ssd1327_96x96_gr.c</in>
+              <in>u8g_dev_ssd1351_128x128.c</in>
+              <in>u8g_dev_ssd1353_160x128.c</in>
+              <in>u8g_dev_st7565_64128n.c</in>
+              <in>u8g_dev_st7565_dogm128.c</in>
+              <in>u8g_dev_st7565_dogm132.c</in>
+              <in>u8g_dev_st7565_lm6059.c</in>
+              <in>u8g_dev_st7565_lm6063.c</in>
+              <in>u8g_dev_st7565_nhd_c12832.c</in>
+              <in>u8g_dev_st7565_nhd_c12864.c</in>
+              <in>u8g_dev_st7687_c144mvgd.c</in>
+              <in>u8g_dev_st7920_128x64.c</in>
+              <in>u8g_dev_st7920_192x32.c</in>
+              <in>u8g_dev_st7920_202x32.c</in>
+              <in>u8g_dev_t6963_128x128.c</in>
+              <in>u8g_dev_t6963_128x64.c</in>
+              <in>u8g_dev_t6963_240x128.c</in>
+              <in>u8g_dev_t6963_240x64.c</in>
+              <in>u8g_dev_tls8204_84x48.c</in>
+              <in>u8g_dev_uc1601_c128032.c</in>
+              <in>u8g_dev_uc1608_240x128.c</in>
+              <in>u8g_dev_uc1608_240x64.c</in>
+              <in>u8g_dev_uc1610_dogxl160.c</in>
+              <in>u8g_dev_uc1611_dogm240.c</in>
+              <in>u8g_dev_uc1611_dogxl240.c</in>
+              <in>u8g_dev_uc1701_dogs102.c</in>
+              <in>u8g_dev_uc1701_mini12864.c</in>
+              <in>u8g_ellipse.c</in>
+              <in>u8g_font.c</in>
+              <in>u8g_font_data.c</in>
+              <in>u8g_line.c</in>
+              <in>u8g_ll_api.c</in>
+              <in>u8g_page.c</in>
+              <in>u8g_pb.c</in>
+              <in>u8g_pb14v1.c</in>
+              <in>u8g_pb16h1.c</in>
+              <in>u8g_pb16h2.c</in>
+              <in>u8g_pb16v1.c</in>
+              <in>u8g_pb16v2.c</in>
+              <in>u8g_pb32h1.c</in>
+              <in>u8g_pb8h1.c</in>
+              <in>u8g_pb8h1f.c</in>
+              <in>u8g_pb8h2.c</in>
+              <in>u8g_pb8h8.c</in>
+              <in>u8g_pb8v1.c</in>
+              <in>u8g_pb8v2.c</in>
+              <in>u8g_pbxh16.c</in>
+              <in>u8g_pbxh24.c</in>
+              <in>u8g_polygon.c</in>
+              <in>u8g_rect.c</in>
+              <in>u8g_rot.c</in>
+              <in>u8g_scale.c</in>
+              <in>u8g_state.c</in>
+              <in>u8g_u16toa.c</in>
+              <in>u8g_u8toa.c</in>
+              <in>u8g_virtual_screen.c</in>
+            </df>
+            <in>U8glib.cpp</in>
+            <in>U8glib.h</in>
+          </df>
+        </df>
+        <in>lib_1306_rot.cpp</in>
+        <in>lib_1306_rot.h</in>
         <in>mesTest.cpp</in>
       </df>
       <df name="test">
