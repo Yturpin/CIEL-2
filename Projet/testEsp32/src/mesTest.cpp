@@ -37,17 +37,46 @@ uint8_t led_1 = 23; // test avec une led de l'écriture sur P4 du PCF85741
 util_1306 Uoled(0, encod_clk, encod_dt, encod_sw, display);
 
 uint8_t A_menu; // Variable de retour du menu
-const int nb_ch_menuA = 5; // Nombre de choix dans le menu
-const String ch_menuA[] = {"MENU", "Modes", "Réglages", "Saisir un Nom", "Bouton Led"};
+const int nb_ch_menuA = 4; // Nombre de choix dans le menu
+const String ch_menuA[] = {"MENU", "Choix Vannes", "Réglages", "Quitter"};
 String _ch_menuA = * ch_menuA; // Pointeur sur liste des choix du menu
 
 uint8_t B_menu; // Variable de retour du menu
 const int nb_ch_menuB = 3; // Nombre de choix dans le menu
 const String ch_menuB[] = {"Changement heure", "Etat arrosage", "Retour"};
 String _ch_menuB = * ch_menuB; // Pointeur sur liste des choix du menu
+
+uint8_t Vannes_menu; // Variable de retour du menu des vannes
+const int nb_ch_menuVannes = 4; // Nombre de choix dans le menu des vannes
+const String ch_menuVannes[] = {"Vanne 1", "Vanne 2", "Vanne 3", "Vanne 4"};
+String _ch_menuVannes = * ch_menuVannes; // Pointeur sur liste des choix du menu
+
+uint8_t Reglages_menu; // Variable de retour du menu des réglages
+const int nb_ch_menuReglages = 3; // Nombre de choix dans le menu des réglages
+const String ch_menuReglages[] = {"Config cycles arrosage", "Date et heure", "Connexion capteur"};
+String _ch_menuReglages = * ch_menuReglages; // Pointeur sur liste des choix du menu
+
+uint8_t Conf_cycles_menu; // Variable de retour du menu des réglages
+const int nb_ch_menuConf_cycles = 3; // Nombre de choix dans le menu des réglages
+const String ch_menuConf_cycles[] = {"Durée d'arrosage", "Fréquence", "Heure de début d'arrosage"};
+String _ch_menuConf_cycles = * ch_menuConf_cycles; // Pointeur sur liste des choix du menu
+
+uint8_t Modes_menu; // Variable de retour du menu
+const int nb_ch_menuModes = 3; // Nombre de choix dans le menu des vannes
+const String ch_menuModes[] = {"Manuel", "Programmé", "Automatique"};
+String _ch_menuModes = * ch_menuModes; // Pointeur sur liste des choix du menu
+
+uint8_t Programme_menu; // Variable de retour du menu
+const int nb_ch_menuProgramme = 3; // Nombre de choix dans le menu des vannes
+const String ch_menuProgramme[] = {"Heure d'arrosage", "Durée d'arrosage", "Fréquence d'arrosage"};
+String _ch_menuProgramme = * ch_menuProgramme; // Pointeur sur liste des choix du menu
+
 // Liste des mois pour exemple de la fonction "déplacement"
-const String m_s[] = {"Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre"};
+const String m_s[] = {"Ouvrir", "Fermer"};
 int res_rup=0; // Résultat roolup
+int res_rup_heure_debut=0; // Résultat roolup Heure début arrosage
+int res_rup_duree=0; // Résultat roolup Durée arrosage
+int res_rup_freq=0; // Résultat roolup fréquence
 int cpt=0; // Compteur
 char sai_dep = ' '; // Utilisée pour le retour de la fonction "déplacement"
 unsigned long temps_jeux; // Pour limite de temps démo jeux
@@ -71,28 +100,110 @@ void loop(){
 	A_menu = Uoled.init_menu(nb_ch_menuA, _ch_menuA);
 	delay(300); // Un délai est necessaire pour éviter les rebonds du bouton de l'encodeur rotatif
 	switch (A_menu){
-		case 0: // Saisie d'une vanne
-			int Vanne_menu; // Choix selectionné dans menu
-                        const int nb_ch_menuVanne = 4; // choix du menu Principal
-                        const String ch_menuVanne[] = {"Vanne 1", "Vanne 2", "Vanne 3", "Vanne 4"};
-                        String _ch_menuVanne = * ch_menuVanne;
-                        Vanne_menu = Uoled.init_menu(nb_ch_menuVanne, _ch_menuVanne);
-		case 1: // Saisie du poids
-			Uoled.prep_aff_LCD(16, 'C');
-			while(res_rup<1||res_rup>200){ 
-				res_rup = Uoled.sai_Num(3, false, "Durée d'arrosage ?");  // Saisie d'un numérique 3 roolup
-				if(res_rup<1||res_rup>200){
-					Uoled.prep_aff_LCD(16, 'C');
-					display.drawString(64, 30, "Erreur !");
-					display.display();
-					while(Uoled.li_rot_sw()){delay(10);}
-				}
-			}
-			Uoled.prep_aff_LCD(16, 'C');
-			display.drawString(64, 30, String(res_rup) + " Kg");
-			display.display();
-			break;
-		case 2: // Menu déplacements
+		case 1: // Menu choix des vannes
+			Vannes_menu = 0;
+			Vannes_menu = Uoled.init_menu(nb_ch_menuVannes, _ch_menuVannes);
+			delay(300); // Un délai est necessaire pour éviter les rebonds du bouton de l'encodeur rotatif
+			switch (Vannes_menu){ // Sous menu modes des vannes
+				case 0: // Vanne 1 modes
+					Modes_menu = 0;
+                                        Modes_menu = Uoled.init_menu(nb_ch_menuModes, _ch_menuModes);
+                                        delay(300);
+                                        switch (Modes_menu){ //Sous menu configuration des mode 
+                                            case 0: //configuration du mode Manuel
+                                                    Uoled.prep_aff_LCD(16, 'C');
+                                                    display.drawString(64, 0, "Etat vanne");
+                                                    display.display();
+                                                    sai_dep = ' ';
+                                                    while(sai_dep != 'B'){
+                                                            sai_dep = Uoled.sai_mov(); // Saisie d'un déplacement de l'encodeur ou d'un appuis
+                                                            if(sai_dep == 'G') cpt = (cpt-1<0)?1:(cpt-1); else if(sai_dep == 'D') cpt = (cpt+1) %2;
+                                                            display.setColor(BLACK);
+                                                            display.fillRect(0, 22, 128, 20);
+                                                            display.setColor(WHITE);
+                                                            display.drawString(64, 22, m_s[cpt]);
+                                                            display.display();
+                                                            delay(30);
+                                                    }
+                                                    display.clear();
+                                                    display.drawString(64, 22, "état> " + m_s[cpt]);
+                                                    display.display();
+                                                    break;
+                                            case 1: // Configuration du mode programmé
+                                                Programme_menu = 0;
+                                                Programme_menu = Uoled.init_menu(nb_ch_menuProgramme, _ch_menuProgramme);
+                                                delay(300);
+                                                switch (Programme_menu){
+                                                    case 0: // Configuration heure d'arrosage
+                                                        Uoled.prep_aff_LCD(16, 'C');
+                                                            while(res_rup_heure_debut<1||res_rup_heure_debut>24){
+                                                                    res_rup_heure_debut = Uoled.sai_Num(2, false, "Heure d'arrosage ?");  // Saisie d'un numérique 3 roolup
+                                                                    if(res_rup_heure_debut<1||res_rup_heure_debut>24){
+                                                                        Uoled.prep_aff_LCD(16, 'C');
+                                                                        display.drawString(64, 30, "Erreur !");
+                                                                        display.display();
+                                                                        while(Uoled.li_rot_sw()){delay(10);}
+                                                                    }
+                                                            }
+                                                            Uoled.prep_aff_LCD(16, 'C');
+                                                            display.drawString(64, 30, String(res_rup_heure_debut) + " h");
+                                                            display.display();
+                                                            break;
+                                                    case 1: // Configuration durée d'arrosage
+                                                        Uoled.prep_aff_LCD(16, 'C');
+                                                            while(res_rup_duree<1||res_rup_duree>24){ 
+                                                                    res_rup_duree = Uoled.sai_Num(2, false, "Durée ?");  // Saisie d'un numérique 3 roolup
+                                                                    if(res_rup_duree<1||res_rup_duree>24){
+                                                                        Uoled.prep_aff_LCD(16, 'C');
+                                                                        display.drawString(64, 30, "Erreur !");
+                                                                        display.display();
+                                                                        while(Uoled.li_rot_sw()){delay(10);}
+                                                                    }
+                                                            }
+                                                            Uoled.prep_aff_LCD(16, 'C');
+                                                            display.drawString(64, 30, String(res_rup_duree) + " min");
+                                                            display.display();
+                                                            break;
+                                                    case 2: // Configuration fréquence d'arrosage
+                                                        Uoled.prep_aff_LCD(16, 'C');
+                                                            while(res_rup_freq<1||res_rup_freq>24){ 
+                                                                    res_rup_freq = Uoled.sai_Num(2, false, "Fréquence ?");  // Saisie d'un numérique 3 roolup
+                                                                    if(res_rup_freq<1||res_rup_freq>24){
+                                                                        Uoled.prep_aff_LCD(16, 'C');
+                                                                        display.drawString(64, 30, "Erreur !");
+                                                                        display.display();
+                                                                        while(Uoled.li_rot_sw()){delay(10);}
+                                                                    }
+                                                            }
+                                                            Uoled.prep_aff_LCD(16, 'C');
+                                                            display.drawString(64, 30, String(res_rup_freq) + " h");
+                                                            display.display();
+                                                            break;
+                                                }
+                                            case 2: // Configuration du mode automatique
+                                                break;
+                                        }
+                                        break;
+                                case 1: // Vanne 2 modes
+                                        break;
+                                case 2: // Vanne 3 modes
+                                        break;
+                                case 3: // Vanne 4 modes
+                                        break;
+                        }       
+                        break;
+		case 2: // Réglages
+			Reglages_menu = 0;
+			Reglages_menu = Uoled.init_menu(nb_ch_menuReglages, _ch_menuReglages);
+			delay(300); // Un délai est necessaire pour éviter les rebonds du bouton de l'encodeur rotatif
+			switch (Reglages_menu){ // Sous menu réglages
+				case 0: // Config cycles d'arrosage
+                                    break;
+                                case 1: // Date et heure
+                                    break;
+                        }    
+                        break;
+		case 3: // Quitter
 			B_menu = 0;
 			B_menu = Uoled.init_menu(nb_ch_menuB, _ch_menuB);
 			delay(300); // Un délai est necessaire pour éviter les rebonds du bouton de l'encodeur rotatif
@@ -153,34 +264,11 @@ void loop(){
 					break;
 				}
 			break;
-		case 3: // Saisie d'un nom
-			v_nom = Uoled.sai_Alpha("Saisir Nom ?"); // Saisie alphanumérique
-			Uoled.prep_aff_LCD(16, 'C');
-			display.drawString(64, 30, v_nom);
-			display.display();
-			break;
-		case 4: // Bouton led (voir schèma de câblage dans la documentation sur le site https://castoo.fr)
-			Uoled.prep_aff_LCD(16, 'C');
-			while(Uoled.li_rot_sw()){
-				if(Uoled.li_eb_rot(bouton)){ // Lecture d'un eb sur une entrée du circuit i2c I/O
-					display.drawString(64, 30, "Bouton ok !");
-					delay(20);
-					Uoled.ecri_eb_rot(led_1, false); // Ecriture d'un eb sur une sortie du circuit i2c I/O
-				}else{
-					display.drawString(64, 30, "Rien vu !");
-					delay(20);
-					Uoled.ecri_eb_rot(led_1, true); // Ecriture d'un eb sur une sortie du circuit i2c I/O
-				}
-				display.display();
-				delay(100);
-				Uoled.prep_aff_LCD(16, 'C');
-			}
-			Uoled.init_eb_rot(); // Remise dans un état stable de l'encodeur rotatif (nécessaire pour rattraper le timing)
-			break;
 	}
 	delay(300);
 	if(A_menu!=4) while(Uoled.li_rot_sw()){delay(10);} // Attente que le bouton de l'encodeur rotatif soit pressé pour continuer
 	Uoled.prep_aff_LCD(10, 'G');
+
 }
 
 /*
